@@ -66,11 +66,9 @@ function stickyCase(string) {
   string = string.toUpperCase()
   let newString = ''
   for(let i =0; i<string.length; i+=2){
-    if (string[i] === string[i].toLowerCase()){
+    (string[i] === string[i].toLowerCase())
       newString = newString[i].toLowerCase()
-    } else {
-      newString = newString[i].toUpperCase()
-    }
+     
   } return newString; 
 }
 // Return the given string in leetspeak. Leetspeak is a modified version of
