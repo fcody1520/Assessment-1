@@ -32,20 +32,34 @@ function bWords(words){
 // Ex.:
 //  extend([1, 2, 3], [4, 5, 6]);
 //  => [1, 2, 3, 4, 5, 6]
-function extend(originalArray, additionalItems) {}
+function extend(originalArray, additionalItems) {
+  let newArr = [] 
+ newArr = originalArray.concat(additionalItems)
+   return newArr
+ }
 
 // Return an array of all items with the given length.
 // Ex.:
 //   itemsWithLength(['a', 'bbb', 'cccc', 'dddddd', 'eee'], 3);
 //   => ['bbb', 'eee']
-function itemsWithLength(items, length) {}
-
+function itemsWithLength(items, length) {
+  let newArr = [];
+  for (let item of items){
+    if (item.length === length) newArr.push(item);
+  } 
+  return newArr
+}
 // Return an array with every other element from the input array (start with index 0).
 // Ex.:
 //   everyOtherItem(['a', 'b', 'c', 'd', 'e']);
 //   => ['a', 'c', 'e']
-function everyOtherItem(items) {}
-
+function everyOtherItem(items) {
+  let newArr = []
+  for (let i=0;i<items.length; i+=2){
+    newArr.push(items[i])
+  }
+    return newArr
+}
 // Given a list of words and a letter, return the indexes of the words that
 // start with that letter. You can assume that the words and letter will always
 // be lowercased.
