@@ -9,7 +9,7 @@
 function commonStrings(array1, array2) {}
 
 // Given three numbers, return a list of numbers from 1 to 100 that are
-// divisible by at least one of a, b or c.
+// divisible by at leas t one of a, b or c.
 // Ex.:
 //   divisibleByEither(50, 30, 29);
 //   => [29, 30, 50, 58, 60, 87, 90, 100]
